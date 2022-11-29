@@ -1,0 +1,14 @@
+<html>
+	<head>
+		<script>
+			const { invoke } = window.__TAURI__.tauri
+			function closeAndReopen() {
+				invoke("close_and_reopen_cmd");
+			}
+
+		</script>
+	</head>
+	<body>
+		<button onClick="closeAndReopen()">Close and reopen</button>
+	</body>
+</html
